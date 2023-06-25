@@ -1,22 +1,28 @@
-# Desenvolva um programa que leia nome, idade e sexo de 4 pessoas. 
-# No final do programa, mostre: A média de idade do grupo, o nome do homem mais velho e quantas mulheres tem menos de 21 anos.
+soma_idade = 0
+media_idade = 0
+homem_mais_velho = 0
+nome_mais_velho = 0
+totmulher20 = 0
 
-Pessoa_1 = str(input("Digite o nome da primeira pessoa: "))
-Pessoa_2 = str(input("Digite o nome da segunda pessoa: "))
-Pessoa_3 = str(input("Digite o nome da terceira pessoa: "))
-Pessoa_4 = str(input("Digite o nome da quarta pessoa: "))
-Pessoa_5 = str(input("Digite o nome da quinta pessoa: "))
+for info in range(1, 5):
+    print(" ----------------- {}ª PESSOA -----------------".format(info))
+    nome = str(input("Nome: ")).strip()
+    idade = int(input("Idade: "))
+    sexo = str(input("Sexo [M/F]")).strip()
+    
+    soma_idade += idade
+    
+    if info == 1 and sexo in "Mm":
+        homem_mais_velho = idade
+        nome_mais_velho = nome
+    elif sexo in "Mm" and idade > homem_mais_velho:
+        homem_mais_velho = idade
+        nome_mais_velho = nome
+    elif sexo in "Ff" and idade < 20:
+        totmulher20 += 1
+        
+media_idade = soma_idade / 4
 
-idade-da-pessoa_1 = str(input("Agora me diga sua idade: "))
-idade-da-pessoa_2 = str(input("Agora me diga sua idade: "))
-idade-da-pessoa_3 = str(input("Agora me diga sua idade: "))
-idade-da-pessoa_4 = str(input("Agora me diga sua idade: "))
-idade-da-pessoa_5 = str(input("Agora me diga sua idade: "))
-
-media-idade-grupo = (idade-da-pessoa_1 + idade-da-pessoa_2 + idade-da-pessoa_3 + idade-da-pessoa_4 + idade-da-pessoa_5)/5
-
-for 
-
-
-
-
+print(" A média de idade do grupo é e {} anos".format(media_idade))
+print("O homem mais velho tem {} anos e se chama {}".format(homem_mais_velho, nome_mais_velho))  
+print("Ao todo são {} mulheres com menos de 20 anos".format(totmulher20))
