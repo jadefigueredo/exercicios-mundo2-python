@@ -44,7 +44,7 @@ Se você tem interesse em conhecer a linguagem python e praticá-la, esse reposi
 
 Python existe para tornar a programação mais intuitiva e menos travada, desde a sua estruturação. Uma das principais características do Python é a legibilidade do código, o que reforça a ideia de ser uma linguagem mais próxima de nós (seres humanos).
 
-Python foi criado com o objetivo de ser uma linguagem de comandos simples, de fácil compreensão e utilização, é uma linguagem de alto nível com sintaxe simples. É uma linguagem de propósito geral, o que significa que ela pode ser utilizada para diversas finalidades, como, por exemplo: desenvolvimento web ou aplicações científicas. É ultra moderna, utilizada por grandes empresas como Google, YouTube, Industrial Light & Magic, Globo e muitas outras.
+Python foi criado com o objetivo de ser uma linguagem de comandos simples, de fácil compreensão e utilização, possui sintaxe simples. É uma linguagem de propósito geral, o que significa que ela pode ser utilizada para diversas finalidades, como, por exemplo: desenvolvimento web ou aplicações científicas. É ultra moderna, utilizada por grandes empresas como Google, YouTube, Industrial Light & Magic, Globo e muitas outras.
 É uma linguagem interpretada de alto nível que suporta múltiplos paradigmas de programação: *imperativo, orientado a objetos e funcional*. Possui tipagem dinâmica e gerenciamento automático de memória. Mas o que isso significa?
 
 ### Vantagens / características
@@ -74,14 +74,14 @@ Python foi criado com o objetivo de ser uma linguagem de comandos simples, de f�
     - ```bool```: lógicos ou booleanos - retorna true ou false;
     - ```str```: valores caracteres ou strings.
 - Condições aninhadas;
-- if... elif.
+- laços e repetições: *if... elif*;
+- range.
 
 ### Como funciona o python?
 
 - Dados possuem delimitadores padrões, no caso do python → (' ')
 - Todos os comandos são funções e todas funções tem parentêses;
 - No caso de números, não se usam aspas;
-- Tudo é escrito sempre em letras minúsculas, a não ser que esteja entre parentêses;
 - Toda variável é um objeto para o python e um objeto é mais do que uma variável;
 - Toda variável pode receber valores com o ```=``` → lê-se recebe
 
